@@ -1,32 +1,73 @@
-/* Write your CSS here */
-.bg-container {
-  background-color: #cccc;
-  height: 100vh;
-  background-size: cover;
+.container {
+  padding: 20px;
+  max-width: 800px;
+  margin: auto;
+  font-family: Arial, sans-serif;
 }
 
-.ul {
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  align-items: flex-start;
-}
-.buttoner{
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  margin-top: 20px;
-}
-.li {
-  color: black;
-  font-family: 'Roboto';
-}
-.postButton {
-  background-color: black;
-  border-radius: 12px;
-  height: auto;
-  width: auto;
-  color: #ffffff;
+.title {
   text-align: center;
+  font-size: 32px;
+  color: #333;
+}
+
+.form {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-bottom: 20px;
+  justify-content: center;
+}
+
+.form input {
+  padding: 8px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  flex: 1 1 200px;
+}
+
+.form button {
+  background-color: #007bff;
+  color: white;
+  padding: 10px 14px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 16px;
+}
+
+.card {
+  padding: 15px;
+  background: #f8f9fa;
+  border-radius: 8px;
+  border: 1px solid #ddd;
+  box-shadow: 0 0 10px #ccc;
+}
+
+.actions {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
+}
+
+.actions button {
+  padding: 6px 10px;
+  border-radius: 4px;
+  cursor: pointer;
+  border: none;
+}
+
+.actions button:first-child {
+  background-color: #28a745;
+  color: white;
+}
+
+.actions button:last-child {
+  background-color: #dc3545;
+  color: white;
 }
